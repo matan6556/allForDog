@@ -13,7 +13,7 @@
       /*Header style-----*/
 
       header {
-       position: sticky;
+        position: sticky;
         top: 0;
         z-index: 1000;
         height: 200px;
@@ -149,25 +149,26 @@
         margin: 10px;
         border: 1px solid black;
       }
+
+      .speed-img,
+      .reliability-img,
       .aboutUs-img {
         animation: text 3s 1;
         position: absolute;
         height: 40px;
-        top: 3.6em;
-        left: 4.5em;
-      }
-      .speed-img,
-      .reliability-img {
-        position: absolute;
-        height: 50px;
-        top: 3em;
-        left: 8em;
-        animation: text 3s 1;
+        bottom: 38px;
+        left: 44px;
       }
       .speedDIV,
       .reliabilityDIV,
       .abouyUsDIV {
         position: relative;
+      }
+      .imgAndTitleDiv {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
       }
       /*END Style of cards-----*/
 
@@ -183,6 +184,10 @@
           margin-top: 20px;
           font-size: 50px;
         }
+        .aboutUsDIV {
+          display: flex;
+          flex-direction: column;
+        }
       }
       @media screen and (max-width: 711px) {
         .image-dog {
@@ -196,7 +201,7 @@
           font-size: 50px;
         }
       }
-       @media screen and (max-width: 500px) {
+      @media screen and (max-width: 365px) {
         header {
           height: 180px;
         }
@@ -230,10 +235,12 @@
 
     <div class="container">
       <div class="abouyUsDIV">
-        <img class="aboutUs-img" src="images/info.png" alt="icon of info" />
-        <h2 class="about-us">
-          קצת עלינו
-        </h2>
+        <div class="imgAndTitleDiv">
+          <img class="aboutUs-img" src="/images/info.png" alt="icon of info" />
+          <h2 class="about-us">
+            קצת עלינו
+          </h2>
+        </div>
         <p class="p1">
           <b>
             הכל לכלב הינה חנות עם שלל מוצרים לחיית מחמד שלכם<br />,הכוללת
@@ -243,14 +250,16 @@
       </div>
 
       <div class="speedDIV">
-        <img
-          class="speed-img"
-          src="images/delivery.png"
-          alt="icon of delivery"
-        />
-        <h2 class="h2-speed">
-          מהירות
-        </h2>
+        <div class="imgAndTitleDiv">
+          <img
+            class="speed-img"
+            src="/images/delivery.png"
+            alt="icon of delivery"
+          />
+          <h2 class="h2-speed">
+            מהירות
+          </h2>
+        </div>
         <p class="p2">
           אנו מספקים משלוחים לכל חלקי הארץ<br />
           בזמן הקצר ביותר עד פתח בית הלקוח!
@@ -258,21 +267,23 @@
       </div>
 
       <div class="reliabilityDIV">
-        <img
-          class="reliability-img"
-          src="images/trust.png"
-          alt="icon of trust"
-        />
-        <h2 class="h2-speed">
-          אמינות
-        </h2>
+        <div class="imgAndTitleDiv">
+          <img
+            class="reliability-img"
+            src="/images/trust.png"
+            alt="icon of trust"
+          />
+          <h2 class="h2-speed">
+            אמינות
+          </h2>
+        </div>
         <p class="p2">
           אלפי לקוחות מרוצים עם דירוג של 5 כוכבים <br />לא אהבתם? לא שילמתם!
         </p>
       </div>
     </div>
     <div class="image-dog">
-      <img src="images/dogImag.png" alt="image of dog" />
+      <img src="/images/dogImag.png" alt="image of dog" />
     </div>
   </body>
 </html>
