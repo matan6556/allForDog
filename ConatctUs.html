@@ -210,6 +210,50 @@
           font-size: 20px;
         }
       }
+      /*nevar resposive to hamburger-----*/
+      @media screen and (max-width: 700px) {
+        .list-menu a {
+          font-size: 20px;
+          padding: 15px;
+        }
+        .main-title {
+          padding: 15px;
+          margin-top: 0px;
+          font-size: 50px;
+        }
+        .line {
+          width: 30px;
+          height: 3px;
+          background: white;
+          margin: 5px;
+        }
+        header {
+          position: relative;
+        }
+        .hamburger {
+          position: absolute;
+          cursor: pointer;
+          right: 5%;
+          top: 15%;
+        }
+
+        .list-menu {
+          line-height: 8;
+          text-align: center;
+          position: fixed;
+          background-image: linear-gradient(45deg, #3f006e, #aa00dc);
+          height: 100vh;
+          width: 100%;
+          flex-direction: column;
+          clip-path: circle(100px at 98% 0%);
+          -webkit-clip-path: circle(100px at 98% -10%);
+          transition: all 1s ease-out;
+        }
+        .list-menu.open {
+          clip-path: circle(100px at 98% -10%);
+          -webkit-clip-path: circle(1100px at 98% -10%);
+        }
+      }
     </style>
   </head>
   <body>
@@ -299,6 +343,17 @@
         inputContact.forEach((input) => {
           input.value = "";
         });
+      });
+      
+      //responsive the nabaer (header) to mobile
+
+      const hamburger = document.querySelector(".hamburger");
+      const listMenu = document.querySelector(".list-menu");
+      const links = document.querySelectorAll(".list-menu li ");
+
+      hamburger.addEventListener("click", () => {
+        listMenu.classList.toggle("open");
+        console.log("click");
       });
     </script>
   </body>
