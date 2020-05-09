@@ -189,40 +189,21 @@
       }
       /*END popUP style-----*/
 
-      @media screen and (max-width: 536px) {
-        .list-menu a {
-        align-items: center;
-          justify-content: center;
-          display: flex;
-          font-size: 20px;
-          padding: 15px;
-        }
-        .main-title {
-          margin-top: 20px;
-          font-size: 50px;
-        }
-      }
-       @media screen and (max-width: 500px) {
-        header {
-          height: 180px;
-        }
-        .main-title {
-          font-size: 28px;
-        }
-        .secondaryTitle-header {
-          font-size: 20px;
-        }
-      }
+     
       /*nevar resposive to hamburger-----*/
+     
       @media screen and (max-width: 700px) {
         .list-menu a {
-          font-size: 16px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          font-size: 15px;
           padding: 15px;
         }
-       .main-title {
+        .main-title {
           padding: 0px;
           margin-top: 0px;
-          font-size: 30px;
+          font-size: 28px;
         }
         .line {
           width: 30px;
@@ -242,20 +223,20 @@
         }
 
         .list-menu {
-          line-height:6;
+          line-height: 7;
           text-align: center;
           position: fixed;
           background-image: linear-gradient(45deg, #3f006e, #aa00dc);
           height: 100vh;
           width: 100%;
           flex-direction: column;
-          clip-path: circle(100px at 90% 0%);
-          -webkit-clip-path: circle(100px at 90% 0%);
+          clip-path: circle(25px at 90% -5%);
+          -webkit-clip-path: circle(25px at 90% -5%);
           transition: all 1s ease-out;
         }
         .list-menu.open {
-          clip-path: circle(1100px at 90% 0%);
-          -webkit-clip-path: circle(1200px at 90% 0%);
+          clip-path: circle(1100px at 90% -5%);
+          -webkit-clip-path: circle(1200px at 90% -5%);
         }
       }
     </style>
