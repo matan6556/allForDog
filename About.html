@@ -306,5 +306,16 @@
     <div class="image-dog">
       <img src="images/dogImag.png" alt="image of dog" />
     </div>
+    
+     <script>
+      //responsive the nabaer (header) to mobile
+
+      const hamburger = document.querySelector(".hamburger");
+      const listMenu = document.querySelector(".list-menu");
+      const links = document.querySelectorAll(".list-menu li ");
+
+      hamburger.addEventListener("click", () => {
+        listMenu.classList.toggle("open");
+      });
   </body>
 </html>
